@@ -4,7 +4,11 @@ public class SynchronizedSingleton {
 
     private static volatile SynchronizedSingleton synchronizedSingleton = null;
 
-    private SynchronizedSingleton(){}
+    private SynchronizedSingleton(){
+        if(synchronizedSingleton !=null){
+            throw new RuntimeException("Use getInstance() method to create");
+        }
+    }
 
     public static SynchronizedSingleton getInstance()
     {
