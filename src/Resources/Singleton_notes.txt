@@ -1,0 +1,31 @@
+Design:
+1) Class is responsible for lifecycle
+2) Static in nature but not use with static class because it need to be thread safe.
+3) Private instance of the singleton class
+4) private constructor for the singleton class
+5) No parameters required for Construction -> with parameter will be factory pattern that violates Singleton rule
+
+
+Schema:
+
+                         Singleton
+                  - singleton: Singleton
+                  - Singleton90
+                  + getInstance():Singleton
+
+-       private
++       public
+
+
+                Everyday Example - Runtime Env
+
+Runtime singletonRuntime = Runtime.getRuntime();
+singletonRuntime.gc();
+System.out.println(singletonRuntime);
+Runtime anotherInstance = Runtime.getRuntime();
+System.out.println(anotherInstance);
+if(singletonRuntime == anotherInstance)
+{
+    System.out.println("They are the same instance");
+}
+
