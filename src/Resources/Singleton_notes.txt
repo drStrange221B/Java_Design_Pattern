@@ -27,5 +27,26 @@ System.out.println(anotherInstance);
 if(singletonRuntime == anotherInstance)
 {
     System.out.println("They are the same instance");
+
 }
+
+Pitfalls
+1) often overused
+2) Difficult to unit test
+3) if not careful, not thread-safe
+4) sometimes confused for Factory as the getInstance() method started to take parameters
+5) java.util.Calendar is Not a Singleton but instead it is Prototype
+
+
+                    Difference between Singleton and Factory
+
+        Singleton                                                           Factor
+1) Returns same instance                                | 1) Returns various instances of various type
+2) One Constructor method - not args                    | 2) Multiple constructors
+3) No Interface (as it is private constructor and       | 3) Interface driven - abstract out backend
+    private instance, interface is not introduced)      | 4) easy to unit test
+                                                        | 5) Adaptable to environment more easily
+
+
+
 
