@@ -36,7 +36,6 @@ public class SingletonDemo {
             System.out.println("Only one instance of SynchronizedSingleton class was created !");
         }
 
-
     }
 
 

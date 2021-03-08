@@ -1,0 +1,8 @@
+Concepts
+1) Handles complex constructors
+2) Large number of Parameters
+3) object immutability
+4) solves the problem as to which constructor to use if there are multiple constructor
+5) Telescoping Constructor - having multiple variation of constructor. Builder pattern helps solve
+   this problem by using the object instead the parameter.
+6) Builder pattern use the STATIC INNER CLASSS.
