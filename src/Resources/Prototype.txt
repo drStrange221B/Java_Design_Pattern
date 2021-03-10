@@ -1,0 +1,19 @@
+Concepts
+1) Avoids costly creation
+2) Avoids subclassing
+3) Typically does not use "new"
+4) Often utilizes an interface
+5) Usually implemented with a Registry
+example
+    java.lang.Object#clone()
+
+
+
+Design
+1) Use Clone/Cloneable
+2) Avoids Keyword "new"
+3) Although a copy, each instance unique
+4) Costly construction not handled by client
+5) can still utilize parameters for construction
+6) Shallow vs Deep copy
+

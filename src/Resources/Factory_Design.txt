@@ -1,0 +1,15 @@
+Concepts
+1) Doesn't expose instantiation logic. client know nothing as to even the type of object it is creating
+2) Defer to subclasses
+3) client are only exposes to Common Interface.
+4) Specified by architecture, implemented by user
+5) Examples:
+   Calendar
+   ResourceBundle
+   NumberFormat
+
+6) Factory is responsible for lifecycle
+7) Common Interface
+8) Concrete classes
+9) Parameterized created method
+10)
